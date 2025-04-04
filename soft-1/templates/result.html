@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>📈 Stock Prediction Result</h2>
+        
+        <!-- Display Stock Name -->
+        <p class="stock-name"><strong>Stock:</strong> {{ stock_name }}</p>
+
+        <!-- Display Prediction Result -->
+        <p class="result-text">
+            <strong>Recommendation:</strong> <span class="prediction">{{ prediction }}</span>
+        </p>
+
+        <!-- Display Stock Trend Graph -->
+        <h3>📊 Stock Trend Graph</h3>
+        <img src="{{ url_for('plot') }}" alt="Stock Graph" class="chart-img">
+        
+        <br><br>
+        <a href="{{ url_for('index') }}" class="btn-link">🔙 Try Again</a>
+    </div>
+</body>
+</html>

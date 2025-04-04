@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuzzy Stock Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>📊 Fuzzy Logic Stock Predictor</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <!-- Stock Name Input -->
+            <label for="stock_name">Stock Name</label>
+            <input type="text" name="stock_name" id="stock_name" required placeholder="Enter stock name (e.g., MRF, Tata Steel)">
+
+            <!-- File Upload for Historical Data -->
+            <label for="stock_file">Upload CSV (Date, Open, High, Low, Close, Volume)</label>
+            <input type="file" name="stock_file" id="stock_file" accept=".csv" required>
+
+            <!-- Prediction Inputs -->
+            <label for="price_change">Price Change (%)</label>
+            <input type="number" step="0.1" name="price_change" id="price_change" required>
+
+            <label for="volume_change">Volume Change (%)</label>
+            <input type="number" step="0.1" name="volume_change" id="volume_change" required>
+
+            <label for="rsi">RSI (0-100)</label>
+            <input type="number" step="0.1" name="rsi" id="rsi" required>
+
+            <label for="ma_trend">MA Trend (5D - 10D MA)</label>
+            <input type="number" step="0.1" name="ma_trend" id="ma_trend" required>
+
+            <!-- Submit Button -->
+            <button type="submit">🚀 Predict Now</button>
+        </form>
+    </div>
+</body>
+</html>

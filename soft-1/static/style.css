@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Headings */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #34495e;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Input Fields */
+input[type="number"],
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* File Input Customization */
+input[type="file"] {
+    padding: 8px;
+    border: 1px dashed #aaa;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+/* Submit Button */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Stock Prediction Result */
+.result-text {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-top: 15px;
+}
+
+.prediction {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Chart Image */
+.chart-img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Navigation Link Button */
+.btn-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
